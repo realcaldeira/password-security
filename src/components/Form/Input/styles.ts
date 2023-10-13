@@ -8,7 +8,6 @@ export const Container = styled.View`
 `;
 
 export const Label = styled.Text`
-  /* font-family: 'Rubik_400Regular'; */
   font-size: ${RFValue(15)}px;
   color: #888D97;
   margin-bottom: 7px;
@@ -17,7 +16,6 @@ export const Label = styled.Text`
 export const Error = styled.Text`
   color: #E83F5B;
   margin-bottom: 4px;
-  /* font-family: 'Rubik_300Light'; */
   font-size: ${RFValue(13)}px;
 `;
 

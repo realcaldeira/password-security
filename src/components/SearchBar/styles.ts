@@ -6,7 +6,7 @@ import { RFValue } from 'react-native-responsive-fontsize';
 
 export const Container = styled.View`
   flex-direction: row;
-  margin-top: ${RFValue(-28)}px;
+  margin-top: ${RFValue(10)}px;
   width: 100%;
   height: ${RFValue(56)}px;
 `;
@@ -14,7 +14,6 @@ export const Container = styled.View`
 export const Input = styled(TextInput)`
   font-size: ${(RFValue(15))}px;
   color: #3D434D;
-  /* font-family: 'Rubik_400Regular'; */
   font-size: 15px;
   flex: 1;
   padding: 0 20px;

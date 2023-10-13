@@ -4,7 +4,10 @@ import { LinearGradient } from 'expo-linear-gradient';
 import { RFValue } from 'react-native-responsive-fontsize';
 
 export const Container = styled.View`
-  /* max-width: 243px; */
+  max-width: 243px;
+  flex: 1;
+  flex-direction: row;
+  margin-top: ${RFValue(25)}px;
 `;
 
 export const ShowPasswordButton = styled.TouchableOpacity``;
@@ -22,13 +25,11 @@ export const PassData = styled.View`
 
 export const Title = styled.Text`
   margin-bottom: ${RFValue(4)}px;
-  /* font-family: 'Rubik_400Regular'; */
   font-size: ${RFValue(13)}px;
   color: #888D97;
 `;
 
 export const Password = styled.Text`
-  /* font-family: 'Rubik_500Medium'; */
   font-size: ${RFValue(15)}px;
   color: #1967FB;
 `;
@@ -39,13 +40,11 @@ export const LoginData = styled.View`
 
 export const BoldTitle = styled.Text`
   margin-bottom: ${RFValue(4)}px;
-  /* font-family: 'Rubik_500Medium'; */
   font-size: ${RFValue(15)}px;
   color: #3D434D;
 `;
 
 export const Email = styled.Text`
-  /* font-family: 'Rubik_400Regular'; */
   font-size: ${RFValue(13)}px;
   color: #888D97;
 `;

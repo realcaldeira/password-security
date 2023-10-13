@@ -11,7 +11,6 @@ export const Container = styled(TouchableOpacity)`
   border-radius: 4px;
 `;
 export const ButtonText = styled.Text`
-  /* font-family: 'Rubik_500Medium'; */
   font-size: ${RFValue(15)}px;
   color: #3D434D;
 `;

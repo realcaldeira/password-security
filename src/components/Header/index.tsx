@@ -26,9 +26,9 @@ interface HeaderProps {
 export function Header({ user }: HeaderProps) {
   const { navigate, goBack } = useNavigation();
 
-  // function handleAddPass() {
-  //   navigate('RegisterLoginData');
-  // }
+  function handleAddPass() {
+    navigate("RegisterLoginData");
+  }
 
   return (
     <Container
@@ -69,7 +69,7 @@ export function Header({ user }: HeaderProps) {
         </>
       ) : (
         <>
-          <BackButton onPress={goBack}>
+          <BackButton onPress={()=> navigate("")}>
             <Icon
               name="chevron-left"
               color="#1967FB"

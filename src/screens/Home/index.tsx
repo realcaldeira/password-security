@@ -43,9 +43,7 @@ export function Home() {
 
   }
 
-  function handleFilterLoginData() {
-
-    
+  function handleFilterLoginData() {    
     const filtredData = searchListData.filter(data => {
       const isValidData = data.service_name
       .toLowerCase()
@@ -61,8 +59,6 @@ export function Home() {
     if(!text){
       setSearchListData(data);
     }
-
-
     setSearchText(text);
   }
 
@@ -72,15 +68,10 @@ export function Home() {
 
   return (
     <>
-      <Header
-        // user={{
-        //   name: 'Caldeira',
-        //   avatar_url: 'https://github.com/realcaldeira.png'
-        // }}
-      />
+      <Header />
       <Container>
         <SearchBar
-          placeholder="Qual senha você procura?"
+          placeholder="Qual senha você deseja?"
           onChangeText={handleChangeInputText}
           value={searchText}
           returnKeyType="search"
@@ -93,7 +84,7 @@ export function Home() {
           <Title>Suas senhas</Title>
           <TotalPassCount>
             {searchListData.length
-              ? `${`${searchListData.length}`.padStart(2, '0')} ao total`
+              ? `${searchListData.length} itens`
               : 'Nada a ser exibido'
             }
           </TotalPassCount>

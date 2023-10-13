@@ -37,20 +37,17 @@ export const TextContainer = styled.View`
 export const HelloMessage = styled.Text`
   font-size: ${RFValue(20)}px;
   line-height: ${RFValue(26)}px;
-  /* font-family: 'Rubik_300Light'; */
   color: #ffffff;
 `;
 
 export const BoldText = styled.Text`
   font-size: ${RFValue(20)}px;
   line-height: ${RFValue(26)}px;
-  /* font-family: 'Rubik_500Medium'; */
   color: #ffffff;
 `;
 
 export const SecondaryMessage = styled.Text`
   font-size: ${RFValue(13)}px;
-  /* font-family: 'Rubik_300Light'; */
   color: #ffffff;
 `;
 
@@ -70,7 +67,6 @@ export const BackButton = styled.Pressable`
 
 export const Title = styled.Text`
   font-size: ${RFValue(20)}px;
-  /* font-family: 'Rubik_500Medium'; */
   color: #3D434D;
   margin: auto;
 `;
