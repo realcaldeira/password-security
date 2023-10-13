@@ -17,10 +17,7 @@ import {
 } from './styles';
 
 interface HeaderProps {
-  user?: {
-    name: string;
-    avatar_url: string;
-  }
+  user?: string;
 }
 
 export function Header({ user }: HeaderProps) {
@@ -32,7 +29,7 @@ export function Header({ user }: HeaderProps) {
 
   return (
     <Container
-      hasUserData={!!user}
+      // hasUserData={!!user}
       style={{
         ...(user
           ? {
@@ -46,11 +43,10 @@ export function Header({ user }: HeaderProps) {
       {user ? (
         <>
           <AboutUser>
-            <Avatar source={{ uri: user.avatar_url }} />
 
             <TextContainer>
               <HelloMessage>
-                Olá, <BoldText>{user.name}</BoldText>
+                Olá, <BoldText>{user}</BoldText>
               </HelloMessage>
 
               <SecondaryMessage>
@@ -59,7 +55,7 @@ export function Header({ user }: HeaderProps) {
             </TextContainer>
           </AboutUser>
 
-          <AddButton onPress={()=>{}}>
+          <AddButton onPress={()=>navigate("RegisterLoginData")}>
             <Icon
               name="plus"
               color="#FFFFFF"
@@ -69,7 +65,7 @@ export function Header({ user }: HeaderProps) {
         </>
       ) : (
         <>
-          <BackButton onPress={()=> navigate("")}>
+          <BackButton onPress={goBack}>
             <Icon
               name="chevron-left"
               color="#1967FB"

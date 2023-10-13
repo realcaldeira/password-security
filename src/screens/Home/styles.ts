@@ -12,7 +12,7 @@ interface LoginListDataProps {
 
 export const Container = styled.View`
   flex: 1;
-  background-color: #F2F3F5;
+  background-color: #1967FB;
   padding: 0 24px;
 `;
 

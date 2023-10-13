@@ -8,6 +8,7 @@ export const Container = styled.View`
   flex: 1;
   flex-direction: row;
   margin-top: ${RFValue(25)}px;
+  
 `;
 
 export const ShowPasswordButton = styled.TouchableOpacity``;

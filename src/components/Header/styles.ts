@@ -10,13 +10,11 @@ interface ContainerProps {
 export const Container = styled.View<ContainerProps>`
   flex-direction: row;
   align-items: center;
+  justify-content: space-between;
   padding: ${({ hasUserData }) => hasUserData
     ? `${getStatusBarHeight(true) + 16}px  24px 60px 24px`
     : `${getStatusBarHeight(true) + 9}px 0 23px 0`
   }
-  ${({ hasUserData }) => hasUserData && css`
-    justify-content: space-between;
-  `}
 `;
 
 export const AboutUser = styled.View`

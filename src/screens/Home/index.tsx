@@ -68,7 +68,9 @@ export function Home() {
 
   return (
     <>
-      <Header />
+      <Header 
+       user="Lucas"
+      />
       <Container>
         <SearchBar
           placeholder="Qual senha você deseja?"
