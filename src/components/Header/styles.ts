@@ -17,10 +17,18 @@ export const Container = styled.View<ContainerProps>`
   }
 `;
 
+export const Wrapper = styled.View`
+  flex: 1;
+  flex-direction: row;
+  align-items: center;
+  justify-content: space-between;
+  padding: 0 ${RFValue(20)}px;
+`;
 export const AboutUser = styled.View`
   flex-direction: row;
   align-items: center;
 `;
+
 
 export const Avatar = styled.Image`
   width: ${RFValue(56)}px;
@@ -44,15 +52,12 @@ export const BoldText = styled.Text`
   color: #ffffff;
 `;
 
-export const SecondaryMessage = styled.Text`
-  font-size: ${RFValue(13)}px;
-  color: #ffffff;
-`;
-
 export const AddButton = styled.Pressable`
   padding: ${RFValue(14.5)}px;
   border: 1.5px #508bfc;
   border-radius: 4px;
+  width: ${RFValue(120)}px;
+  background-color: #12A454;
 `;
 
 export const Icon = styled(Feather)``;
@@ -66,5 +71,10 @@ export const BackButton = styled.Pressable`
 export const Title = styled.Text`
   font-size: ${RFValue(20)}px;
   color: #3D434D;
+  margin: auto;
+`;
+export const Text = styled.Text`
+  font-size: ${RFValue(12)}px;
+  color: white;
   margin: auto;
 `;

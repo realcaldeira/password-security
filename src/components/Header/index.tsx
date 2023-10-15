@@ -5,15 +5,15 @@ import { useNavigation } from '@react-navigation/native';
 import {
   Container,
   AboutUser,
-  Avatar,
+  Wrapper,
   TextContainer,
   HelloMessage,
   BoldText,
-  SecondaryMessage,
   AddButton,
   Icon,
   BackButton,
   Title,
+  Text
 } from './styles';
 
 interface HeaderProps {
@@ -33,7 +33,7 @@ export function Header({ user }: HeaderProps) {
       style={{
         ...(user
           ? {
-            backgroundColor: '#1967FB'
+            backgroundColor: '#5429CC'
           }
           : {
             backgroundColor: '#FFFFFF'
@@ -41,7 +41,7 @@ export function Header({ user }: HeaderProps) {
       }}
     >
       {user ? (
-        <>
+        <Wrapper>
           <AboutUser>
 
             <TextContainer>
@@ -49,26 +49,19 @@ export function Header({ user }: HeaderProps) {
                 Olá, <BoldText>{user}</BoldText>
               </HelloMessage>
 
-              <SecondaryMessage>
-                Sinta-se seguro aqui
-              </SecondaryMessage>
             </TextContainer>
           </AboutUser>
 
           <AddButton onPress={()=>navigate("RegisterLoginData")}>
-            <Icon
-              name="plus"
-              color="#FFFFFF"
-              size={24}
-            />
+            <Text>Nova senha</Text>
           </AddButton>
-        </>
+        </Wrapper>
       ) : (
         <>
           <BackButton onPress={goBack}>
             <Icon
               name="chevron-left"
-              color="#1967FB"
+              color="#5429CC"
               size={28}
             />
           </BackButton>

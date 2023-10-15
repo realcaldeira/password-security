@@ -81,7 +81,7 @@ export function RegisterLoginData() {
           />
           <Input
             testID="email-input"
-            title="E-mail"
+            title="E-mail ou usuário"
             name="email"
             error={errors.email && errors.email.message}
             control={control}

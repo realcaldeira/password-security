@@ -9,13 +9,13 @@ export const Container = styled.View`
 
 export const Label = styled.Text`
   font-size: ${RFValue(15)}px;
-  color: #888D97;
+  color: white;
   margin-bottom: 7px;
 `;
 
 export const Error = styled.Text`
-  color: #E83F5B;
-  margin-bottom: 4px;
+  color: #CF4444;
+  margin-top: 4px;
   font-size: ${RFValue(13)}px;
 `;
 
